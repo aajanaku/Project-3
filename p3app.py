@@ -12,7 +12,9 @@ from flask import Flask, jsonify
 #################################################
 # Database Setup
 #################################################
-engine = create_engine(f'sqlite:///{db_file}')
+dfs={}
+db_file = 'publishing_trends.sqlite'
+engine = create_engine(f'sqlite:///{db_file}.sqlite')
 
 # reflect an existing database into a new model
 metadata = MetaData()
