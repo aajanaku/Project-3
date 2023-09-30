@@ -1,28 +1,24 @@
 
-
-// Store genre label
 var genres = [];
 
-// Store Pre-Pandemic and Pandemic prices
 var prePandemicPrices = [];
 var pandemicPrices = [];
 
-
 data.forEach(function(item) {
-    genres.push(item[1]); 
+    genres.push(item[0]); 
 
     // Pre-Pandemic Price
     prePandemicPrices.push({
-        name: item[1], 
+        name: item[0], 
         y: item[2],    
-        color: 'pink' 
+        color: 'DeepSkyBlue' 
     });
 
     // Pandemic Price
     pandemicPrices.push({
-        name: item[1], 
+        name: item[0], 
         y: item[4],    
-        color: 'black' 
+        color: 'DarkSlateBlue' 
     });
 });
 
