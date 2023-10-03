@@ -22,22 +22,22 @@ def index():
     return render_template("index2.html")
 
 # Route that calls user_types.html and fetches data from the database
-@app.route("/user_types")
-def user_types():
+# @app.route("/user_types")
+# def user_types():
 
-    # Fetch the data from the query
-    data = result.fetchall()
-    return render_template("user_types.html", data=data)
+#     Fetch the data from the query
+#     data = result.fetchall()
+#     return render_template("user_types.html", data=data)
 
 # Route that calls retail_prices.html
-@app.route("/retail_prices")
-def retail_prices():
-    return render_template("retail_prices.html")
+# @app.route("/retail_prices")
+# def retail_prices():
+#     return render_template("retail_prices.html")
 
 # Route that calls pub_data.html
-@app.route("/pub_data")
-def pub_data():
-    return render_template("pub_data.html")
+# @app.route("/pub_data")
+# def pub_data():
+#     return render_template("pub_data.html")
 
 if __name__ == '__main__':
     app.run()
